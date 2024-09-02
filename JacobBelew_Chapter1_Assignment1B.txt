@@ -1,0 +1,47 @@
+
+Assignment 1B Text Document
+
+---
+
+Name: Jacob Belew  
+Date Created: 9/1/24
+
+---
+
+Program Description: This assignment simulates a Magic 8 Ball, which is a fortune telling toy that displays a random response to a yes or no question.
+
+---
+
+Logical Steps:  
+1. Call the get_answers_file to get the list of responses.
+2. Start the loop.
+3. Prompt user for yes/no question.
+4. Choose random response to the user's question.
+5. Display this response.
+6. Ask user if they with to continue (If no then close loop).
+
+---
+
+Variables:  
+1. responses: list containing the magic 8ball responses
+2. random_answer: randomly chosen response to the users question from the list
+3. continue_response: User's decision on whether they want to continue the loop
+
+
+---
+
+Functions: 
+1. Function Name: get_answers_file():
+   Description: Provides the list of the magic 8ball responses for the ball_response function to call on.
+   Parameters: none
+   Returns: list of the responses
+
+2. Function Name: ball_response()
+   Description: Prompts user for the questions and displays the randomized responses whilst calling the get_answers_file function for the list of the responses. 
+   Parameters: none
+   Returns: none
+
+---
+
+Link to repository: https://github.com/JTheBlue1/COP2373
+

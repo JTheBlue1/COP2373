@@ -1,0 +1,56 @@
+##This assignment simulates a Magic 8 Ball, which is a fortune telling toy that
+##displays a random response to a yes or no question.
+
+import random
+
+def get_answers_file():
+    #return list of 8ball responses
+
+    #create list of 8ball responses
+    responses = [
+        "Yes of course!,",
+        "Without a doubt, yes.",
+        "You can count on it.",
+        "For sure!",
+        "Ask me later!",
+        "I'm not sure.",
+        "I can't tell you right now.",
+        "I'll tell you after my nap.",
+        "No Way!",
+        "I don't think so.",
+        "Without a doubt, no.",
+        "The answer is clearly NO!"
+    ]
+    return responses
+
+def ball_responses():
+    #prompts user for the yes/no question,
+    #displays randomized response from list,
+    #then determines if user want to continue the loop
+
+    #Call on the function to get the list of possible responses
+    answers = get_answers_file()
+
+    while True:
+        #prompt user for the question
+        input('Ask the Magic 8ball a question that has a yes or no answer: ')
+
+        #choose random response from the list
+        random_response =  random.choice(answers)
+
+        #display the random response
+        print(f'Magic 8ball answers: {random_response}')
+
+        #ask user if they would like to continue
+        continue_response = input('Would you like to ask the Magic 8ball another question? (yes/no): ').strip().lower()
+
+        #If the user wishes to quit, terminate the loop
+        if continue_response != 'yes':
+            print('Thanks for playing! Goodbye.')
+            break
+
+if __name__ == "__main__":
+    ball_responses()
+
+
+
