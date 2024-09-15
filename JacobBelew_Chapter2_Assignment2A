@@ -1,0 +1,65 @@
+##Then your application will scan the message for each of the 30 keywords
+## or phrases. For each occurrence of one of these within the message,
+## add a point to the message's "spam score".
+##  Next, rate the likelihood that the message is spam,
+## based on the number of points received. Display the user's spam score,
+## the likelihood message that it is spam, and the words/phrases which caused it to be spam.
+
+def get_spamlist_file():
+    #return and create list of 30 spam words
+
+    spam_list = [
+    "Free", "Win", "Winner", "Cash", "Prize", "Money", "Credit", "Debt", "Offer",
+        "Guarantee", "Limited time", "Risk-free", "Discount", "Save big", "Earn money",
+        "Free access", "Free gift", "Special promotion", "Click here", "Act now",
+        "Unsecured credit", "Confidentiality", "100% free", "No fees", "Additional income",
+        "Extra cash", "Prize award", "Free trial", "Online biz opportunity", "Win big"
+    ]
+
+    return spam_list
+
+def scan_user_email(email):
+
+    #call on function to get spam list
+    spam_list = get_spamlist_file()
+
+    #convert the email message to lowercase to match the spam words
+    lower_message = email.lower()
+
+    spam_score = 0
+    spam_words = []
+
+    for keyword in spam_list:
+        #convert the keyword to lowercase
+        if keyword.lower() in lower_message:
+            spam_score += 1
+            spam_words.append(keyword)
+
+    #Find the spam likelihood
+    if spam_score <= 5:
+        spam_likelihood = "Low Risk"
+    elif spam_score <= 15:
+        spam_likelihood = "Medium Risk"
+    else:
+        spam_likelihood = "High Risk"
+
+    #return variables
+    return spam_score, spam_likelihood, spam_words
+
+def main():
+    #prompt user for email message
+    print('Enter an email message to determine its spam score.')
+    message = input("Enter any email message.")
+
+    #find spam score and likelihood
+    spam_score, spam_likelihood, spam_words = scan_user_email(message)
+
+    #show the spam results
+    print('\nYour Spam Score:', spam_score)
+    print('Likelihood that this message is a spam email:', spam_likelihood)
+    print('Words that were flagged to be possible spam:')
+    for word in spam_words:
+        print(f'- {word}')
+
+if __name__ == "__main__":
+    main()
