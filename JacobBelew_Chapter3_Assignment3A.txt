@@ -1,0 +1,61 @@
+
+JacobBelew_Chapter3_Assignment3A
+
+---
+
+Name: Jacob Belew
+Date Created: 9/22/24
+
+---
+
+Program Description: 
+Write a program asking the user for a list of their monthly expenses. When asking the user for their expenses, ask for the type of expense and the amount. Use the reduce method to analyze the expenses and display the total expense, the highest expense and the lowest expense. Label what the highest and lowest expense is. 
+
+---
+
+Logical Steps:  
+1. Get user input on monthly expenses (type and amount).
+2. Calculate the total expenses using the reduce function.
+3. Analyze the total, highest, and lowest expenses.
+4. Display the total, highest, and lowest expenses.
+
+---
+
+Variables:  
+1. expenses = List to store the expenses
+2. expense_types = The type of expense entered by the user
+3. expense_amount = The amount of expenses entered by the user
+4. total_expenses = Total sum of the expenses
+5. highest_expenses = Highest expense amount
+6. lowest_expenses = Lowest expense amount
+7. highest_expense_types = List of highest expenses
+8. lowest_expense_types = List of lowest expenses
+
+---
+
+Functions:
+1. Function Name: get_user_expenses(): 
+   Description: Prompts and accumulates the expense types/amounts from the user until    they wish to end the loop.
+   Parameters: None.
+   Returns: The list of the expenses that contain the types and the amounts.
+
+2. Function Name: get_expense_totals():
+   Description: Calculate the total, highest, and lowest expenses through using the reduce method.
+   Parameters: "expenses" - a list of the expense types and amounts.
+   Returns: A list with the values of the total, highest, and lowest expenses.
+
+3. Function Name: expense_analyzer():
+   Description: Analyzes the expenses through the calculation of the total expenses and printing the results.
+   Parameters: "expenses" - a list of expense types and amounts.
+   Returns: None.
+
+4. Function Name: main():
+   Description: Gets the user input and displays the expenses
+   Parameters: None.
+   Returns: None.
+
+
+---
+
+Link to repository: https://github.com/JTheBlue1/COP2373
+
