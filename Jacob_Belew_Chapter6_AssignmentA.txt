@@ -1,0 +1,60 @@
+
+JacobBelew_Chapter6_Assignment6A
+
+---
+
+Name: Jacob Belew  
+Date Created: 10/20/24
+
+---
+
+Program Description: 
+Create functions to validate phone numbers, social security numbers and zip codes using regular expressions. Create a main function to get input from a user and then displaying if the phone number, social security number and zip code they entered is valid. 
+
+Be sure to test the functions with various inputs, including valid and invalid examples, to ensure the correctness of the regular expressions.
+
+---
+
+Logical Steps:  
+1. Prompt user for the phone number, social security number, and zip code.
+2. The code runs each of the functions assigned to phone number, social security number, and zip code in order to determine if they are in the correct format and are valid.
+3. Determine if the inputs are valid or invalid using else and if statements.
+4. Display the results to user.
+
+---
+
+Variables:  
+1. phone = user input of the phone number
+2. social = user input of the social security number
+3. zip = user input of the zip code
+
+---
+
+Functions:
+1. Function Name: validate_phone 
+   Description: Validates the phone number towards the required formats.
+   Parameters: 
+   phone- the phone number that is validated.
+   Returns: Will return a true statement if the phone number meets the required formats.
+
+2. Function Name: validate_social
+   Description: Validates the social security number towards the required formats.
+   Parameters: 
+   social- the social security number that is validated.
+   Returns: Will return a true statement if the social security number meets the required formats.
+
+3. Function Name: validate_zip
+   Description: Validates the ZIP code towards the required formats.
+   Parameters: 
+   zip- the ZIP code that is validated.
+   Returns: Will return a true statement if the ZIP code meets the required formats.
+
+4. Function Name: main
+   Description: Gathers the inputs from user, then validates and displays them.
+   Parameters: none.
+   Returns: none.
+
+---
+
+Link to repository: https://github.com/JTheBlue1/COP2373
+
