@@ -1,0 +1,45 @@
+
+JacobBelew_Chapter7_AssignmentA
+
+---
+
+Name: Jacob Belew 
+Date Created: 10/28/24
+
+---
+
+Program Description: 
+Using the code in Section 7.4, write a program that will allow me to have any number of sentences, including sentences which begin with numbers. Display the sentences and the count of sentences
+
+---
+
+Logical Steps:  
+1. Prompt the user to enter the text.
+2. Use the regular expression pattern to divide the text into single sentences.
+3. Remove any unnecessary spaces from the sentences.
+4. Display the sentences found to user.
+
+---
+
+Variables:  
+1. text: The user's input text.
+2. reg_pattern: The regular expression pattern that is used to find sentences.
+3. final_sentences: List that contains the sentences taken from the input after the pattern is applied.
+4. int: integer used to format the sentences to be displayed.
+
+---
+
+Functions:
+1. Function Name: sentence_s
+   Description: Splits the users text input into multiple sentences through punctuation and capitalization.
+   Parameters: text; the users text input.
+   Returns: the list of sentences.
+
+2. Function Name: main  
+   Description: Prompts the user for input then displays the results of the divided sentences.
+   Parameters: none.
+   Returns: none.
+
+---
+
+Link to repository: https://github.com/JTheBlue1/COP2373
