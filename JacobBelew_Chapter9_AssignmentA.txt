@@ -1,0 +1,78 @@
+
+JacobBelew_Chapter9_AssignmentA
+
+---
+
+Name: Jacob Belew
+Date Created: 11/3/24
+
+---
+
+Program Description: 
+Create a BankAcct Class that contains at least the following state information: name, account number, amount and interest rate. In addition to an __init__ method, the class should support methods for adjusting the interest rate, for withdrawing and depositing, and for giving a balance. You should also include a method to calculate the interest based on the number of days. Use the __str__ method to display balances and interest amounts. Create a test function to test the different methods in the BankAcct Class. 
+
+The class and test function should be in one .py file. 
+
+---
+
+Logical Steps:  
+1. Define the BankAcct Class.
+2. Add methods to the BankAcct Class.
+3. Format the information.
+4. Create a test function to test the BankAcct Class.
+5. Use the main function to run the program.
+
+---
+
+Variables:  
+1. name: name of the account holder
+2. acct_num: The account number
+3. amount: Current balance of the account
+4. int_rt: annual interest rate
+
+---
+
+Functions:
+1. Function Name: __init__ 
+   Description: Initializes the BankAcct Class 
+   Parameters: name, acct_num, amount, int_rt 
+   Returns: none
+
+2. Function Name: adjust_rate  
+   Description: Updates interest rate in the account 
+   Parameters: new_rt  
+   Returns: none
+
+3. Function Name: withdraw
+   Description: Withdraws amount from the account
+   Parameters: amount
+   Returns: none
+
+4. Function Name: deposit 
+   Description: Deposits amount into account
+   Parameters: amount
+   Returns: none
+
+5. Function Name: balance
+   Description: Returns balance of the account
+   Parameters: none
+   Returns: Current account balance
+
+ 6. Function Name: calculate_int
+   Description: Calculates interest earned over any period of days 
+   Parameters: days  
+   Returns: none
+
+7. Function Name: __str__
+   Description: Represents each of the account details: names, account number, balance, and interest rates 
+   Parameters: none 
+   Returns: The account details
+
+8. Function Name: test_bank_acct
+   Description: Tests the BankAcct class through simulating an account with each of the details.
+   Parameters: none  
+   Returns: none
+
+---
+
+Link to repository: https://github.com/JTheBlue1/COP2373
