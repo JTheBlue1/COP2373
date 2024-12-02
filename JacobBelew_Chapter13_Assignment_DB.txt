@@ -1,0 +1,54 @@
+
+JacobBelew_Chapter13_Assignment_DB
+
+---
+
+Name: Jacob Belew
+Date Created: 12/2/24
+
+---
+
+Program Description: 
+Write a program to create a database called population_(your initials). For ex: population_SM would be my database. Create a table named population with the following fields; 1. city, 2. year, 3. population. Choose 10 cities in Florida and insert data into the population table for the year 2023. 
+
+Create a function to the simulate population growth for the next 20 years at a 2% growth rate for each year. Insert this data into the population table. 
+
+Using matplotlib, create a function to show the population growth for a city. Let the user know the 10 cities as options and ask them to choose one and display the population growth for the city visually. Let the user continue to choose a city until they are done. 
+
+---
+
+Logical Steps:  
+1. Setup SQLite database
+2. Insert the population data
+3. Simulate the population growth
+4. Display the population growth on a graph
+5. Close database connection
+
+---
+
+Variables:  
+1. db_name
+2. fl_cities
+3. init_pop
+4. conn
+5. years
+6. growth_rate
+7. city
+8. data
+
+---
+
+Functions:
+1. Function Name: pop_sim()
+   Description: Simulate population growth then inserts projected population into database 
+   Parameters: years, growth_rate
+   Returns: none
+
+2. Function Name: plot_pop()
+   Description: Enables user to choose city then displays its population growth on a plot 
+   Parameters: none
+   Returns: none
+
+---
+
+Link to repository: https://github.com/JTheBlue1/COP2373
